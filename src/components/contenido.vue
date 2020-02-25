@@ -1,7 +1,9 @@
 
 <template>
 
-    <h3 class="leccion-titulo" @click="miFuncion()">{{ titulo }}</h3>
+    <div id="container_prueba">
+        <h3 class="leccion-titulo" @click="miFuncion()">{{ titulo }}</h3>
+    </div>
     
 </template>
 
@@ -18,7 +20,8 @@
             },
             miFuncion: {
                 type: Function
-            }
+            },
+            idContainer: String
         }
     }
 </script>

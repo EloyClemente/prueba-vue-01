@@ -7,9 +7,14 @@
 		<Componente01/>
 		<Componente02/>
 
-		<Contenido titulo="Desconexión del centro"/> 
+		<Contenido 
+			titulo="Desconexión del centro"
+			idContainer="container_001"
+			:miFuncion="function(){ prueba('container_prueba') }" 
+		/> 
+
 		<Contenido titulo="Autoimagen y supermodelo"/>
-		<Contenido titulo="El centramiento" :miFuncion="prueba" />
+		<Contenido titulo="El centramiento" />
 
 	</div>
 </template>
@@ -35,9 +40,11 @@
 			// Leccion002
 		},
 		methods: {
-			prueba: function()
+			prueba: function(id)
 			{
-				console.log('funciona')
+				let container = document.getElementById(id)
+				console.log(container)
+				container.style.border = "1px solid blue"
 			}
 		}
 	}
