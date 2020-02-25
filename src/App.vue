@@ -7,10 +7,9 @@
 		<Componente01/>
 		<Componente02/>
 
-		<Contenido titulo="Desconexión del centro"/>
+		<Contenido titulo="Desconexión del centro"/> 
 		<Contenido titulo="Autoimagen y supermodelo"/>
-		<Contenido titulo="El centramiento"/>
-		<Contenido/>
+		<Contenido titulo="El centramiento" :miFuncion="prueba" />
 
 	</div>
 </template>
@@ -22,6 +21,8 @@
 	import Componente01 from './components/componente-01.vue'
 	import Componente02 from './components/componente-02.vue'
 	import Contenido from './components/contenido.vue'
+	// import Leccion001 from './components/leccion-001.vue'
+	// import Leccion002 from './components/leccion-002.vue'
 
 
 	export default {
@@ -29,7 +30,15 @@
 		components: {
 			Componente01,
 			Componente02,
-			Contenido
+			Contenido,
+			// Leccion001
+			// Leccion002
+		},
+		methods: {
+			prueba: function()
+			{
+				console.log('funciona')
+			}
 		}
 	}
 </script>

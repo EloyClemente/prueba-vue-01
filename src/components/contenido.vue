@@ -1,7 +1,7 @@
 
 <template>
 
-    <h3 class="leccion-titulo">{{ titulo }}</h3>
+    <h3 class="leccion-titulo" @click="miFuncion()">{{ titulo }}</h3>
     
 </template>
 
@@ -15,6 +15,9 @@
             titulo: {
                 type: String,
                 default: 'Titulo'
+            },
+            miFuncion: {
+                type: Function
             }
         }
     }

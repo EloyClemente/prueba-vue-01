@@ -58,12 +58,6 @@
                         that.mostrar = !that.mostrar
                     }, 300)
                 }    
-            },
-
-
-            mounted: function() 
-            {
-                console.log('montado')
             }
         }
     }
